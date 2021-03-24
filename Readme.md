@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Dmitry Susin](https://up.htmlacademy.ru/adaptive/22/user/870127).
-* Наставник: `Владислав Ермолаев`.
+* Наставник: `Владислав Ермолаев`. (https://htmlacademy.ru/profile/id128353)
 
 ---
 
