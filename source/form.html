@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Form</title>
-  <link rel="stylesheet" href="/source/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="page-header">
     <div class="container">
       <a class="page-header__logo">
-        <img src="#" alt="Лого Седона">
+        <img src="img/logotype-mobile.svg.svg" alt="Лого Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -43,73 +43,73 @@
   <main class="page-main-form">
     <div class="container">
       <div class="page-main-form__title-image">
-        <img src="#" alt="">
+        <img src="img/SEDONA-form.svg" alt="Добро пожаловать в Седону">
       </div>
-      <h1 class="page-main-form__title">Оставьте свой отзыв</h1>
+      <h1 class="page-main-form__header">Оставьте свой отзыв</h1>
       <p class="page-main-form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form action="https://echo.htmlacademy.ru" method="post" class="review-form">
         <div class="form-input-blocks">
-          <fieldset class="page-main-form_title">
+          <fieldset class="page-main-form__title">
             <legend class="page-main-form__description">Представьтесь:</legend>
             <label class="page-main-form__label">
               ИМЯ*:
-              <input type="text" placeholder="Петр">
+              <input type="text" placeholder="Петр" class="page-main-form__input">
             </label>
             <label class="page-main-form__label">
               ФАМИЛИЯ*:
-              <input type="text" placeholder="Иванов">
+              <input type="text" placeholder="Иванов" class="page-main-form__input">
             </label>
             <label class="page-main-form__label">
               Отчество:
-              <input type="text" placeholder="Александрович">
+              <input type="text" placeholder="Александрович" class="page-main-form__input">
             </label>
           </fieldset>
-          <fieldset class="page-main-form_title">
+          <fieldset class="page-main-form__title">
             <legend class="page-main-form__description">Контактная информация:</legend>
             <label class="page-main-form__label">
               Контактный телефон*:
-              <input type="tel" placeholder="Введите телефон">
+              <input type="tel" placeholder="Введите телефон" class="page-main-form__input">
             </label>
             <label class="page-main-form__label">
               Электронная почта*:
-              <input type="email" placeholder="Введите e-mail">
+              <input type="email" placeholder="Введите e-mail" class="page-main-form__input">
             </label>
           </fieldset>
-          <fieldset class="page-main-form_title">
+          <fieldset class="page-main-form__title">
             <legend class="page-main-form__description">ВАше Общее впечатление:</legend>
             <label class="page-main-form__label">
               Скорее положительное
-              <input type="radio" checked>
+              <input type="radio" checked class="page-main-form__input">
             </label>
             <label class="page-main-form__label">
               Скорее отрицательное
-              <input type="radio">
+              <input type="radio"  class="page-main-form__input">
             </label>
             <label class="page-main-form__label">
               Затрудняюсь ответить
-              <input type="radio">
+              <input type="radio" class="page-main-form__input">
             </label>
           </fieldset>
-          <fieldset class="page-main-form_title">
+          <fieldset class="page-main-form__title">
             <legend class="page-main-form__description">посещенные достопримечательности:</legend>
             <label class="page-main-form__label">
               Мост Дьявола
-              <input type="checkbox" checked>
+              <input type="checkbox" checked class="page-main-form__input">
             </label>
-            <label class="page-main-form__label">
+            <label class="page-main-form__label" class="page-main-form__input">
               Гора-Колокол
-              <input type="checkbox" checked>
+              <input type="checkbox" checked class="page-main-form__input">
             </label>
             <label class="page-main-form__label">
               Слайд-парк
-              <input type="checkbox" checked>
+              <input type="checkbox" checked class="page-main-form__input">
             </label>
             <label class="page-main-form__label">
               Красные скалы
-              <input type="checkbox">
+              <input type="checkbox" class="page-main-form__input">
             </label>
           </fieldset>
-          <fieldset class="page-main-form_title">
+          <fieldset class="page-main-form__title">
             <legend class="page-main-form__description">Опишите свои эмоции:</legend>
             <textarea placeholder="Опишите подробно все свои восторги" rows="4"></textarea>
           </fieldset>
