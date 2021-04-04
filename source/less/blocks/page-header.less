@@ -1,10 +1,25 @@
 
-
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
+@media only screen and (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
-.list__item {
+.main-nav__list {
   background-color: @blue-bg;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .main-nav__list {
+    display: flex;
+    background-color: @white;
+  }
+}
+.main-nav {
+  min-height: 56px;
+}
+
+ .main-nav__list .list_item {
+  color: white;
 }
