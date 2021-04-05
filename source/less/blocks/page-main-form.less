@@ -1,6 +1,6 @@
 
 .page-main-form__title-image {
-  background: url("../../img/back-desktop-form.jpg");
+  background-image: url(../../img/back-desktop-form.jpg);
 }
 
 .page-main-form__description {
@@ -30,4 +30,44 @@ input::placeholder {
 
 .page-main-form__input {
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  .form-input-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .page-main-form__title:nth-of-type(3) {
+    order: -1;
+  }
+
+  .page-main-form__title:nth-of-type(2),
+  .page-main-form__title:nth-of-type(4),
+  .page-main-form__title:nth-of-type(5) {
+    grid-column: span 3;
+    text-align: center;
+
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .form-input-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .page-main-form__title:nth-of-type(2),
+  .page-main-form__title:nth-of-type(4) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
