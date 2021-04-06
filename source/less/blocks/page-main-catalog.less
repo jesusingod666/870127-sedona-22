@@ -7,6 +7,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
+  text-align: center;
 }
 
 .photo__header,
@@ -20,4 +21,35 @@
 .video__description {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .photo__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo__item,
+  .video {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo__item:first-child {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .photo__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .photo__item:first-child {
+    grid-column: span 3;
+  }
+}
+
