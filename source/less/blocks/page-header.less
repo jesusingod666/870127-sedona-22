@@ -5,6 +5,14 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  a {
+    color: @white;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
 .main-nav__list {
   background-color: @blue-bg;
 }
@@ -17,8 +25,17 @@
     background-color: @white;
   }
 
-  .main-nav__list .list__item {
-    color:black;
+  .main-nav__list a {
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+      color: @blue-bg;
+    }
+    &:active {
+      color: @black;
+      opacity: 0.3;
+    }
   }
 }
 .main-nav {
