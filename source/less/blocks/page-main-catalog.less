@@ -8,6 +8,8 @@
   font-weight: 700;
   line-height: 1;
   text-align: center;
+  padding-bottom: 40px;
+  padding-top: 32px;
 }
 
 .photo__header,
@@ -17,13 +19,48 @@
   line-height: 1;
 }
 
+.photo__header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .photo__description,
 .video__description {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  padding-bottom: 40px;
 }
 
+.video-controls__scale {
+  max-width: 280px;
+  min-height: 45px;
+  background-color: @black;
+  opacity: 0.6;
+  margin-top: -50px;
+  transform: translateX(7%);
+}
+
+.video-controls__buttons {
+  max-width: 280px;
+  min-height: 66px;
+  background-color: @grey-bg-textarea;
+  transform: translateX(7%);
+}
+
+@media only screen and (max-width: 767px) {
+  .photo__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo__item {
+    padding: 22px 0 15px 0;
+    border-top: 1px solid @grey-border;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .photo__list {
@@ -40,6 +77,51 @@
   .photo__item:first-child {
     grid-column: span 2;
   }
+
+  .photo__title,
+  .video__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 59px;
+  }
+
+  .photo__item .wrapper {
+    background-color: @grey-bg-textarea;
+  }
+
+  .photo__item .wrapper:nth-of-type(4) {
+    background-color: @grey-bg-catalog;
+  }
+
+  .video-controls__scale {
+    min-width: 648px;
+    min-height: 93px;
+    background-color: @black;
+    opacity: 0.6;
+    margin-top: -93px;
+    transform: translateX(7%);
+  }
+
+  .video-controls__buttons {
+    min-width: 647px;
+    min-height: 92px;
+    background-color: transparent;
+    transform: translateX(7%);
+    margin-top: -60px;
+  }
+
+  .video-controls__button {
+    background-color: transparent;
+  }
+
+  .video-controls__button path {
+    fill: var(@white);
+    opacity: 1;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -51,5 +133,31 @@
   .photo__item:first-child {
     grid-column: span 3;
   }
+
+  .photo__item .wrapper {
+    background-color: @black;
+    opacity: 0.3;
+    color: @white;
+    margin-top: -63px;
+  }
+
+  .video-controls__scale {
+    min-width: 800px;
+    min-height: 93px;
+    background-color: @black;
+    opacity: 0.6;
+    margin-top: -93px;
+    transform: translateX(26%);
+  }
+
+  .video-controls__buttons {
+    min-width: 800px;
+    min-height: 92px;
+    background-color: transparent;
+    transform: translateX(26%);
+    margin-top: -65px;
+  }
 }
+
+
 
