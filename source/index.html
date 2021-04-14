@@ -11,7 +11,11 @@
     <header class="page-header">
       <div class="container">
         <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg.svg" alt="Лого Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg.svg">
+            <img src="img/logotype-mobile.svg.svg" alt="Лого Седона" width="102" height="84">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
@@ -24,12 +28,12 @@
               </a>
             </li>
             <li class="list__item">
-              <a href="#">
+              <a href="catalog.html">
                 ФОТО И ВИДЕО
               </a>
             </li>
             <li class="list__item">
-            <a href="#">
+            <a href="form.html">
               Форма Отзыва
             </a>
             </li>
@@ -42,7 +46,11 @@
         </nav>
        </div>
        <div class="title-image">
-        <img src="img/SEDONA-form.svg" alt="Добро пожаловать в Седону">
+         <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-index-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
+          <img src="img/text-index@1x.svg.svg" alt="Добро пожаловать в Седону">
+         </picture>
       </div>
     </header>
   <main class="page-main">
@@ -50,7 +58,7 @@
       <div class="container">
         <ul class="features__list">
           <li class="title-text">
-            <h1 class="title-text__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <h1 class="title-text__header">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
             <p class="title-text__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </li>
           <li class="features__item features__item--blue">
@@ -59,7 +67,11 @@
             <p class="features__description">Седона - не аттракцион для туристов, там<br> течёт своя жизнь</p>
           </li>
           <li class="features__picture">
-            <img src="img/photo-city@1x1.jpg" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img src="img/photo-city@1x1.jpg" srcset="img/photo-city@2x.jpg 2x" alt="">
+            </picture>
           </li>
           <li class="features__item features__item--white">
             <span class="features__title">Жилье</span>
@@ -74,7 +86,11 @@
             <p>Не только китайского, но и местного<br> производства!</p>
           </li>
           <li class="features__picture">
-            <img src="img/photo-bridge@1x1.jpg" alt="Каньон Дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge@1x1.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Каньон Дьявола">
+            </picture>
           </li>
           <li class="features__item features__item--blue">
             <span class="features__title">Там есть<br> Мост дьявола</span>
