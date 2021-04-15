@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catalog</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="../favicon.ico" sizes="16x16">
+  <link rel="icon" href="img/favicons/32.ico" sizes="32x32">
+  <link rel="icon" href="img/favicons/152.ico" sizes="152x152">
 </head>
 <body class="page-body">
   <header class="page-header">
     <div class="container">
       <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg.svg" alt="Лого Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg.svg">
+          <img src="img/logotype-mobile.svg.svg" alt="Лого Седона">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -18,7 +25,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="list__item">
-            <a href="#">
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -28,7 +35,7 @@
             </a>
           </li>
           <li class="list__item">
-            <a href="#">
+            <a href="form.html">
               Форма Отзыва
             </a>
           </li>
@@ -40,8 +47,12 @@
         </ul>
       </nav>
     </div>
-    <div class="title-image">
-      <img src="img/SEDONA-form.svg" alt="Добро пожаловать в Седону">
+    <div class="title-image-form">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+        <img src="img/sedona-mobile.svg" alt="Добро пожаловать в Седону">
+      </picture>
     </div>
   </header>
   <main class="page-main-catalog">
@@ -51,7 +62,11 @@
         <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         <ul class="photo__list">
           <li class="photo__item">
-            <img src="img/photo-1-mobile.jpg.jpg" alt="неродные просторы">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile.jpg.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="неродные просторы">
+            </picture>
             <div class="wrapper">
               <h2 class="photo__header">неродные просторы</h2>
               <span class="photo__author">Автор фото: Борис</span>
@@ -65,7 +80,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img src="img/photo-2-mobile.jpg.jpg" alt="Местная растительность">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile.jpg.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+            </picture>
             <div class="wrapper">
               <h2 class="photo__header">Местная растительность</h2>
               <span class="photo__author">Автор фото: Сергей</span>
@@ -79,7 +98,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img src="img/photo-3-mobile.jpg.jpg" alt="Дорога на север">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile.jpg.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+            </picture>
             <div class="wrapper">
               <h2 class="photo__header">Дорога на север</h2>
               <span class="photo__author">Автор фото: Петр</span>
@@ -93,7 +116,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img src="img/photo-4-desktop_1.jpg" alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-desktop_1.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+            </picture>
             <div class="wrapper">
               <h2 class="photo__header">Мост дьявола</h2>
               <span class="photo__author">Автор фото: Антон</span>
@@ -113,7 +140,12 @@
       <div class="video">
         <h1 class="video__title">Все еще сомневаетесь?</h1>
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img src="img/video-mobile.jpg.jpg" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile.jpg.jpg" srcset="img/video-mobile@2x.jpg" alt="">
+        </picture>
+
       </div>
       <div class="video-controls">
         <div class="video-controls__scale">
@@ -199,7 +231,12 @@
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-description">Разработано</span>
         <a href="#" >
-          <img src="img/htmlacademy.svg" alt="Перейти на сайт HTML Academy" width="27px" height="34px">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9
+            12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1
+            18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4
+            20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg>
         </a>
       </div>
     </div>
