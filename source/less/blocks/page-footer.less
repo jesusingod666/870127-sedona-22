@@ -14,6 +14,15 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  .academy-logo:hover {
+    fill: @blue-bg;
+  }
+}
+
+.academy-logo:active {
+  fill: @black;
+  opacity: 0.3;
 }
 
 .map {
@@ -22,6 +31,11 @@
 
 .page-footer__list {
   display: flex;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__link {
@@ -32,6 +46,21 @@
   width: 46px;
   height: 48px;
   background-color: @blue-bg;
+
+    &:hover {
+      background-color: @button-hover;
+    }
+
+    &:active {
+      background-color: @button-active;
+    }
+}
+
+.twitter:active,
+.facebook:active,
+.youtube:active {
+  fill: @white;
+  opacity: 0.3;
 }
 
 .page-footer__link:nth-last-of-type(1),
@@ -42,6 +71,7 @@
 .page-footer__hashtag {
   padding: 28px 0 33px;
   color: @black;
+  font-weight: 700;
   font-size: 21px;
 }
 
@@ -52,5 +82,6 @@
 
 .page-footer__copyright-description {
   font-size: 14px;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
+  margin-right: 10px;
 }

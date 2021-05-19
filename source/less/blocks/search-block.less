@@ -19,6 +19,11 @@
     font-weight: 700;
     padding-bottom: 35px;
     padding-top: 35px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+    }
   }
 
 .search-block__description {
@@ -28,7 +33,6 @@
     text-align: center;
   }
 
-  @media only screen and (max-width: 767px) {
     .search-block__button {
       display: flex;
       justify-content: center;
@@ -42,8 +46,27 @@
       background-color: @blue-bg;
       border: none;
       margin-bottom: 49px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: @button-hover;
+      }
+
+      &:active {
+        background-color: @button-active;
+        color: rgba(255,255,255, 0.3);
+      }
+
+      &:disabled {
+        background-color: @grey-border;
+      }
     }
+
+    .map {
+      width: 320px;
+      height: 350px;
   }
+
 @media only screen and (min-width: 768px) {
   .search-block__button {
     display: flex;
@@ -59,5 +82,14 @@
     border: none;
     margin-bottom: 49px;
   }
+
+  .map {
+      width: 768px;
+  }
 }
 
+@media only screen and (min-width: 1200px) {
+  .map {
+      width: 1200px;
+  }
+}

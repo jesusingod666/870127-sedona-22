@@ -1,20 +1,24 @@
 .title-image {
   background: url("../../img/back-mobile.jpg") no-repeat;
+  background-color:@blue-bg;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 90px 15px;
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 96%, 50% 100%, 0% 96%);
+  }
+
 
   @media (min-resolution: 2dppx) {
     background-image: url(../../img/back-mobile@2x.jpg);
   }
-}
 
 @media only screen and (min-width: @tablet-width) {
   .title-image {
     background-image: url(../../img/back-table@1x.jpg);
     background-size: cover;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 91%, 95% 91%, 95% 87%, 50% 98%, 4% 87%, 4% 91%, 0 91%);
   }
 
   @media (min-resolution: 2dppx) {
@@ -26,6 +30,7 @@
   .title-image {
     background-image: url(../../img/back-desktop@1x.jpg);
     background-size: cover;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 88%, 79% 91%, 79% 87%, 50% 97%, 21% 87%, 21% 91%, 0 87%);
   }
 
   @media (min-resolution: 2dppx) {
@@ -41,6 +46,7 @@
   justify-content: center;
   align-items: center;
   padding: 90px 15px;
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 96%, 50% 100%, 0% 96%);
 
   @media (min-resolution: 2dppx) {
     background-image: url(../../img/bg-form/bg-form-mobile@2x.jpg);
@@ -51,6 +57,7 @@
   .title-image-form {
     background-image: url(../../img/bg-form/bg-form-tablet@1x.jpg);
     background-size: cover;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 91%, 95% 91%, 95% 87%, 50% 98%, 4% 87%, 4% 91%, 0 91%);
   }
 
   @media (min-resolution: 2dppx) {
@@ -66,6 +73,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url(../../img/bg-form/bg-form-desktop@2x.jpg);
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 88%, 79% 91%, 79% 87%, 50% 97%, 21% 87%, 21% 91%, 0 87%);
   }
 
 }

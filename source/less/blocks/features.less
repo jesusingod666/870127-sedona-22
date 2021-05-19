@@ -2,34 +2,47 @@
 .features__item--blue {
   background-color: @blue-bg;
   color: @white;
+  padding: 34px 12px 39px;
 }
 
-@media only screen and (max-width: 767px) {
+.features__item--blue:nth-of-type(1) {
+  clip-path: polygon(0% 100%, 0% 67%, 50% 69%, 100% 67%, 100% 100%);
+}
+
 .features__item--white p {
   text-align: left;
   }
 
   .features__item--white {
-    min-height: 139px;
+    padding: 5px 10px;
+    min-height: 150px;
+    display: block;
+
+    @media only screen and (min-width: @tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 
   .features__item--grey {
     min-height: 126px;
   }
 
-  .features__item--grey p {
-    padding-bottom: 24px;
-    border-bottom: 1px solid @border-grey;
+  .features__item--grey:not(:first-child) {
+    border-top: 1px solid @border-grey;
   }
-}
+
 
 @media only screen and (min-width: 768px) {
-  .features__item--white p {
-    text-align: center;
-    }
+  .features__item--white p,
   .features__item--grey p {
-      text-align: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
     }
+
     .features__item--white {
       min-height: 330px;
     }
@@ -39,9 +52,6 @@
     }
   }
 
-.features__item {
- padding: 5px 10px;
-}
 
 .features__number {
   padding-bottom: 26px;
@@ -49,16 +59,19 @@
 
 .features__item--grey {
   background-color: @grey-bg;
+  padding: 26px;
 }
 
 .features__title {
   font-size: 18px;
   font-weight: 700;
-  padding-bottom: 15px;
+  text-align: center;
 }
 
 .features__item--blue .features__description {
   padding-bottom: 36px;
+  line-height: 21px;
+  font-size: 14px;
   text-align: center;
 
 }
@@ -68,13 +81,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .features__title {
+    font-size: 21px;
+    text-align: center;
+  }
 }
 
-.features li:not(.features__picture) {
+.features li:not(.features__picture):not(.features__item--white) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .features li:first-child {
