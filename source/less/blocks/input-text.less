@@ -1,0 +1,85 @@
+.input-name {
+  width: 230px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+
+  &:hover{
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #fff;
+    border: 4px solid #E5E5E5;
+    outline: none;
+  }
+
+
+  @media (min-width: @tablet-width) {
+    width: 216px;
+    margin-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
+  }
+}
+
+.input-text {
+  margin: 37px 0 46px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input-text h2 {
+    align-self: center;
+  }
+}
+
+
+.input-text label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.input-surname,
+.input-patronymic
+{
+  width: 192px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+
+  &:hover{
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #fff;
+    border: 4px solid #E5E5E5;
+    outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 178px;
+    margin-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 312px;
+  }
+}

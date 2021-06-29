@@ -1,4 +1,133 @@
 
+.features-wrapper__house {
+  position: relative;
+  padding: 0 40px 0 70px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+}
+
+.features-wrapper__house::before {
+  position: absolute;
+  content: url(../../img/icon-house.svg.svg);
+  top: 0;
+  left: 10px;
+  width: 39px;
+  height: 36px;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 75px;
+    top: -80%;
+    left: 34%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 75px;
+    top: -97%;
+    left: 40%;
+  }
+}
+
+.features-wrapper__souvenirs {
+  position: relative;
+  padding: 0 40px 0 70px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+}
+
+.features-wrapper__souvenirs::before {
+  position: absolute;
+  content: url(../../img/icon-gift.svg.svg);
+  top: 0;
+  left: 10px;
+  width: 32px;
+  height: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 64px;
+    height: 75px;
+    top: -112%;
+    left: 35%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 64px;
+    height: 75px;
+    top: -140%;
+    left: 41%;
+  }
+}
+
+.features-wrapper__food {
+  position: relative;
+  padding: 0 40px 0 70px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+}
+
+.features-wrapper__food::before {
+  position: absolute;
+  content: url(../../img/icon-burger.svg.svg);
+  top: 0;
+  left: 10px;
+  width: 40px;
+  height: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    height: 68px;
+    top: -97%;
+    left: 33%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    height: 68px;
+    top: -82%;
+    left: 40%;
+  }
+}
+
+.features-wrapper__house b,
+.features-wrapper__souvenirs b,
+.features-wrapper__food b {
+  font-size: 18px;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+
 .features__item--blue {
   background-color: @blue-bg;
   color: @white;
@@ -10,7 +139,9 @@
 }
 
 .features__item--white p {
-  text-align: left;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 22px;
   }
 
   .features__item--white {
@@ -63,6 +194,7 @@
 }
 
 .features__title {
+  padding-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
   text-align: center;

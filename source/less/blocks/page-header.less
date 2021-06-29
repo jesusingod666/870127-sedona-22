@@ -4,6 +4,19 @@
     font-size: 18px;
     font-weight: 700;
 
+
+    &--active {
+      color: @nav-item-disabled;
+
+      &:hover {
+        color: @nav-item-disabled-hover-active;
+      }
+
+      &:active {
+        color: @nav-item-disabled;
+        opacity: 0.3;
+      }
+    }
   }
 
   .button-burger {
@@ -35,6 +48,16 @@
     background-color: @blue-bg;
     box-shadow: 0 8px 0 0 @blue-bg, 0 16px 0 0 @blue-bg;
 
+    &:hover {
+      background-color: @blue-bg;
+      opacity: 0.6;
+    }
+
+    &:active {
+      background-color: @blue-bg;
+      opacity: 0.3;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -46,6 +69,16 @@
       cursor: pointer;
       background-color: @white;
       display: none;
+
+      &:hover {
+        background-color: @white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        background-color: @white;
+        opacity: 0.3;
+      }
     }
 
     &::before {
@@ -95,8 +128,12 @@
 @media only screen and (min-width: 768px) {
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     color: @black;
+
+  .list__item--left {
+    margin-right: 156px;
+    }
   }
 
   .list__item {
@@ -105,8 +142,8 @@
     min-width: 153px;
     min-height: 55px;
 
-    &--left {
-      text-align: left;
+    &:hover {
+      background-color: transparent;
     }
   }
 
@@ -117,6 +154,7 @@
 
     &:hover {
       color: @blue-bg;
+
     }
     &:active {
       color: @black;
@@ -134,6 +172,18 @@
     &:active:disabled {
       color: @nav-item-disabled-hover-active;
       opacity: 0.3;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-nav__list {
+    display: flex;
+    // justify-content: space-between;
+    color: @black;
+
+  .list__item--left {
+    margin-right: 244px;
     }
   }
 }

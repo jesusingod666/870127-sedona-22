@@ -19,32 +19,32 @@
           <img src="img/logotype-mobile.svg.svg" alt="Лого Седона">
         </picture>
       </a>
-      <nav class="main-nav main-nav--no-js">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="list__item">
             <a href="index.html" class="list__link-nav">
               Главная
             </a>
           </li>
-          <li class="list__item">
-            <a href="#" class="list__link-nav">
+          <li class="list__item list__item--left">
+            <a href="#" class="list__link-nav list__link-nav--active">
               ФОТО И ВИДЕО
             </a>
           </li>
           <li class="list__item">
-            <a href="form.html" class="list__link-nav">
-              Форма Отзыва
-            </a>
+          <a href="form.html" class="list__link-nav">
+            Форма Отзыва
+          </a>
           </li>
           <li class="list__item">
             <a href="#" class="list__link-nav">
-              HTML ACADEMY
+            HTML ACADEMY
             </a>
           </li>
         </ul>
-        <button class="main-nav__toggle main-nav__toggle--off" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
     <div class="title-image-form">
@@ -97,7 +97,7 @@
               <span class="photo__author">Автор фото: Сергей</span>
               <div class="subwrapper">
                 <button type="button" class="icon-like">
-                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg" class="like">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
                 </button>
@@ -116,7 +116,7 @@
               <span class="photo__author">Автор фото: Петр</span>
               <div class="subwrapper">
                 <button type="button" class="icon-like">
-                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg" class="like">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
                 </button>
@@ -135,7 +135,7 @@
               <span class="photo__author">Автор фото: Антон</span>
               <div class="subwrapper">
                 <button type="button" class="icon-like">
-                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg" class="like">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
                 </button>
@@ -149,7 +149,7 @@
     <section class="container-video">
       <div class="video">
         <h1 class="video__title">Все еще сомневаетесь?</h1>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
         <picture>
           <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">

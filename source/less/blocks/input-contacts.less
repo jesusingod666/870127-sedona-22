@@ -1,0 +1,149 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    grid-column:  span 2;
+    margin-top: 72px;
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts label {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+
+    &:nth-child(2) {
+      margin-top: 15px;
+    }
+  }
+}
+
+
+.contacts-supwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-around;
+  }
+}
+
+.input-tel,
+.input-email
+ {
+  width: 222px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+
+  &:hover{
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #fff;
+    border: 4px solid #E5E5E5;
+    outline: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 590px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 199px;
+  }
+}
+
+.icon-container {
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+.phone-icon,
+.email-icon
+ {
+  position: absolute;
+  top: 37%;
+  left: 38%;
+}
+
+@media (min-width: @tablet-width) {
+  .form-title__text--border-contacs::before {
+    content: '';
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: 6%;
+    left: 0;
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-title__text--border-contacs::after {
+    content: '';
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: 6%;
+    right: 0;
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
+  }
+}
+
+.contacts label {
+  font-size: 14px;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+
+  }
+}
+
+.contacts-supwrapper__left,
+.contacts-supwrapper__right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+
+.icon-container--phone,
+.icon-container--email {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 100%;
+}

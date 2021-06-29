@@ -19,33 +19,32 @@
           <img src="img/logotype-mobile.svg.svg" alt="Лого Седона">
         </picture>
       </a>
-      <nav class="main-nav  main-nav--no-js">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="list__item">
             <a href="index.html" class="list__link-nav">
               Главная
             </a>
           </li>
-          <li class="list__item">
+          <li class="list__item list__item--left">
             <a href="catalog.html" class="list__link-nav">
               ФОТО И ВИДЕО
             </a>
           </li>
           <li class="list__item">
-            <a href="#" class="list__link-nav">
-              Форма Отзыва
-            </a>
+          <a href="#" class="list__link-nav list__link-nav--active">
+            Форма Отзыва
+          </a>
           </li>
           <li class="list__item">
             <a href="#" class="list__link-nav">
-              HTML ACADEMY
+            HTML ACADEMY
             </a>
           </li>
         </ul>
-        <button class="main-nav__toggle main-nav__toggle--off" type="button">
-          <span class="button-burger__icon"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </nav>
     </div>
     <div class="title-image-form">
@@ -56,7 +55,7 @@
       </picture>
     </div>
   </header>
-  <main class="page-main-form">
+  <!-- <main class="page-main-form">
     <div class="container">
       <h1 class="page-main-form__header">Оставьте свой отзыв</h1>
       <p class="page-main-form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
@@ -103,37 +102,51 @@
           <fieldset class="page-main-form__title">
             <legend class="page-main-form__description">ВАше Общее впечатление:</legend>
             <label class="page-main-form__label page-main-form__label-radio">
-              <input type="radio" class="page-main-form__input visually-hidden" checked>
+              <input type="radio" name="radio" class="page-main-form__input visually-hidden" checked>
               Скорее положительное
             </label>
             <label class="page-main-form__label page-main-form__label-radio">
-              <input type="radio" class="page-main-form__input visually-hidden">
+              <input type="radio" name="radio" class="page-main-form__input visually-hidden">
               Скорее отрицательное
             </label>
             <label class="page-main-form__label page-main-form__label-radio">
-              <input type="radio" class="page-main-form__input visually-hidden">
+              <input type="radio" name="radio" class="page-main-form__input visually-hidden">
               Затрудняюсь ответить
             </label>
           </fieldset>
           <fieldset class="page-main-form__title">
             <legend class="page-main-form__description page-main-form__description--sights">посещенные<br> достопримечательности:</legend>
 
-            <label class="page-main-form__label page-main-form__label-checkbox">
-              <input name="checkbox" type="checkbox" class="check-box__input" checked>
-              Мост Дьявола
-            </label>
-            <label class="page-main-form__label page-main-form__label-checkbox">
-              <input name="checkbox" type="checkbox" class="check-box__input" checked>
-              Гора-Колокол
-            </label>
-            <label class="page-main-form__label page-main-form__label-checkbox">
-            <input name="checkbox" type="checkbox" class="check-box__input" checked>
-              Слайд-парк
-            </label>
-            <label class="page-main-form__label page-main-form__label-checkbox">
-              <input name="checkbox" type="checkbox" class="check-box__input">
-              Красные скалы
-            </label>
+            <div class="page-main-form__title-container">
+
+              <div class="page-main-form__title-subwrapper">
+
+                <label class="page-main-form__label page-main-form__label-checkbox">
+                  <input name="checkbox" type="checkbox" class="check-box__input" checked>
+                  Мост Дьявола
+                </label>
+                <label class="page-main-form__label page-main-form__label-checkbox">
+                  <input name="checkbox" type="checkbox" class="check-box__input" checked>
+                  Гора-Колокол
+                </label>
+
+              </div>
+
+              <div class="page-main-form__title-subwrapper">
+
+                <label class="page-main-form__label page-main-form__label-checkbox">
+                  <input name="checkbox" type="checkbox" class="check-box__input" checked>
+                    Слайд-парк
+                  </label>
+                  <label class="page-main-form__label page-main-form__label-checkbox">
+                    <input name="checkbox" type="checkbox" class="check-box__input">
+                    Красные скалы
+                  </label>
+
+              </div>
+
+            </div>
+
           </fieldset>
           <fieldset class="page-main-form__title">
             <legend class="page-main-form__description">Опишите свои эмоции:</legend>
@@ -144,8 +157,142 @@
         </div>
       </form>
     </div>
-  </main>
+  </main> -->
+  <main>
+    <div class="form-wrapper">
+          <div class="form-title">
+            <h1 class="form-title__text form-title__text--big">Оставьте свой отзыв</h1>
+            <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <div class="container">
+              <div class="input-text">
+                <h2 class="form-title__text">Представьтесь:</h2>
 
+                <label>
+                  имя*:
+                  <input class="input-name" type="text" name="textinput" placeholder="Петр">
+
+                </label>
+
+                <label>
+                  фамилия*:
+                  <input class="input-surname" type="text" name="textinput" placeholder="Иванов">
+
+                </label>
+
+                <label>
+                  отчество*:
+                  <input class="input-patronymic" type="text" name="textinput" placeholder="Александрович">
+
+                </label>
+
+
+              </div>
+
+              <div class="contacts">
+                <h2 class="form-title__text form-title__text--border-contacs">Контактная информация:</h2>
+                <div class="contacts-supwrapper">
+                  <div class="contacts-supwrapper__left">
+                    <label for="telinput">Контактный телефон*:</label>
+                    <input class="input-tel" type="tel" name="tel" id="telinput" placeholder="Введите телефон">
+                    <div class="icon-container icon-container--phone">
+                      <svg class="phone-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="contacts-supwrapper__right">
+                    <label for="emailinput">Электронная почта*:</label>
+                    <input class="input-email" type="email" name="email" id="emailinput" placeholder="Введите e-mail">
+                    <div class="icon-container icon-container--email">
+                      <svg class="email-icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="radio-input">
+                <h2 class="form-title__text">Ваше Общее впечатление:</h2>
+
+
+                  <label>
+                    <input class="input-radio" type="radio" name="radio" value="1" checked>
+                    Скорее положительное
+                  </label>
+
+
+                  <label>
+                    <input class="input-radio" type="radio" name="radio" value="2">
+                    Скорее отрицательное
+                  </label>
+
+
+                  <label>
+                    <input class="input-radio" type="radio" name="radio" value="3">
+                    Затрудняюсь ответить
+                  </label>
+
+              </div>
+              <div class="checkbox-input">
+                <h2 class="form-title__text form-title__text--border-checkbox">посещенные<br> достопримечательности:</h2>
+
+                <div class="checkbox-subwrapper">
+
+                  <div class="checkbox-subwrapper__left">
+
+                    <label>
+                      <input class="input-checkbox" type="checkbox" name="one" checked>
+                      Мост Дьявола
+                    </label>
+
+                    <label>
+                      <input class="input-checkbox" type="checkbox" name="two" checked>
+                      Гора-Колокол
+                    </label>
+
+                  </div>
+
+                  <div class="checkbox-subwrapper__right">
+
+                    <label>
+                      <input class="input-checkbox" type="checkbox" name="three" checked>
+                      Слайд-парк
+                    </label>
+
+                    <label>
+                      <input class="input-checkbox" type="checkbox" name="four">
+                      Красные скалы
+                    </label>
+
+                  </div>
+
+
+                </div>
+
+              </div>
+              <div class="input-textarea">
+                <h2 class="form-title__text form-title__text--border-textarea">Опишите свои эмоции:</h2>
+
+                <textarea class="textarea-field" name="textarea" placeholder="Опишите подробно все свои восторги "></textarea>
+
+              </div>
+
+              <div class="form-button">
+
+                <button type="submit" class="form-button">отправить отзыв</button>
+
+              </div>
+              <div class="mobile-vh-text">
+                <span>* — обязательные поля</span>
+              </div>
+            </div>
+          </form>
+    </div>
+  </main>
   <footer class="page-footer">
     <div class="container">
       <a href="#" class="page-footer__hashtag">#visitSEDONA</a>
